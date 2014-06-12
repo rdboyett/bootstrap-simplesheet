@@ -113,7 +113,7 @@
 <div class="container">
   <div id="main-region" class="">
     <div>
-      <div class="panel">
+      <div class="panel rounded">
         <div class="panel-heading col-xs-12">
           <span class="panel-title col-xs-12 col-sm-6">
               <a href="" style="color: red;" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="back to classes">1st Period</a> &gt; Worksheet Name
@@ -121,19 +121,23 @@
               <button class="btn btn-default pull-right" id="info-btn"  data-toggle="tooltip" data-placement="bottom" title="" data-original-title="help">
                 <i class="glyphicon glyphicon-info-sign"></i>
               </button>
-              <button class="btn btn-default pull-right" id="info-btn"  data-toggle="tooltip" data-placement="bottom" title="" data-original-title="download grades">
+              <button class="btn btn-default pull-right" id="download-btn"  data-toggle="tooltip" data-placement="bottom" title="" data-original-title="download grades">
                 <i class="glyphicon glyphicon-download-alt"></i>
               </button>
-              <button class="btn btn-default pull-right" id="grid-btn" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="list">
-                <i class="glyphicon glyphicon-th-list"></i>
+              <button class="btn btn-default pull-right" id="list-btn" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="list">
+                <i class="glyphicon glyphicon-list"></i>
               </button>
               <button class="btn btn-default pull-right" id="grid-btn" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="grid">
                 <i class="glyphicon glyphicon-th"></i>
               </button>
             
         </div>
+        
+        
         <div class="panel-body table-responsive">
-          <div class="row" id="class-overview"></div>
+          
+          
+          <!------------------------------------  Start of list holder -------------------------------------------->
             <div id="list-students">
               <div class="col-xs-12">
                 <div class="row">
@@ -591,7 +595,86 @@
                 </div>
               </div>
             </div>
-          </div>
+        <!-----------------------------  End of holder ----------------------------------------->
+            
+            <div id="grid-students">
+                <div id="studentBox1" class="studentBox col-xs-6 rounded" data-options='{"right":"7", "wrong":"2"}'>
+                    <div class="cont" student-name="Robert">
+                        <svg class="svg" width="130" height="130" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                          <path class="background" d="M 27 100 A 50 50 0 1 1 97 100"/>
+                          <path class="right-green" d="M 25 100"/>
+                          <path class="wrong-red" d="M 25 100"/>
+                        </svg>
+                    </div>
+                </div>
+                <div id="studentBox2" class="studentBox col-xs-6 rounded" data-options='{"right":"7", "wrong":"2"}'>
+                    <div class="cont" student-name="Robert">
+                        <svg class="svg" width="130" height="130" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                          <path class="background" d="M 27 100 A 50 50 0 1 1 97 100"/>
+                          <path class="right-green" d="M 25 100"/>
+                          <path class="wrong-red" d="M 25 100"/>
+                        </svg>
+                    </div>
+                </div>
+                <div id="studentBox3" class="studentBox col-xs-6 rounded" data-options='{"right":"7", "wrong":"2"}'>
+                    <div class="cont" student-name="Robert">
+                        <svg class="svg" width="130" height="130" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                          <path class="background" d="M 27 100 A 50 50 0 1 1 97 100"/>
+                          <path class="right-green" d="M 25 100"/>
+                          <path class="wrong-red" d="M 25 100"/>
+                        </svg>
+                    </div>
+                </div>
+                <div id="studentBox4" class="studentBox col-xs-6 rounded" data-options='{"right":"7", "wrong":"2"}'>
+                    <div class="cont" student-name="Robert">
+                        <svg class="svg" width="130" height="130" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                          <path class="background" d="M 27 100 A 50 50 0 1 1 97 100"/>
+                          <path class="right-green" d="M 25 100"/>
+                          <path class="wrong-red" d="M 25 100"/>
+                        </svg>
+                    </div>
+                </div>
+                <div id="studentBox5" class="studentBox col-xs-6 rounded" data-options='{"right":"7", "wrong":"2"}'>
+                    <div class="cont" student-name="Robert">
+                        <svg class="svg" width="130" height="130" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                          <path class="background" d="M 27 100 A 50 50 0 1 1 97 100"/>
+                          <path class="right-green" d="M 25 100"/>
+                          <path class="wrong-red" d="M 25 100"/>
+                        </svg>
+                    </div>
+                </div>
+                <div id="studentBox6" class="studentBox col-xs-6 rounded" data-options='{"right":"7", "wrong":"2"}'>
+                    <div class="cont" student-name="Robert">
+                        <svg class="svg" width="130" height="130" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                          <path class="background" d="M 27 100 A 50 50 0 1 1 97 100"/>
+                          <path class="right-green" d="M 25 100"/>
+                          <path class="wrong-red" d="M 25 100"/>
+                        </svg>
+                    </div>
+                </div>
+                <div id="studentBox7" class="studentBox col-xs-6 rounded" data-options='{"right":"7", "wrong":"2"}'>
+                    <div class="cont" student-name="Robert">
+                        <svg class="svg" width="130" height="130" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                          <path class="background" d="M 27 100 A 50 50 0 1 1 97 100"/>
+                          <path class="right-green" d="M 25 100"/>
+                          <path class="wrong-red" d="M 25 100"/>
+                        </svg>
+                    </div>
+                </div>
+                <div id="studentBox8" class="studentBox col-xs-6 rounded" data-options='{"right":"7", "wrong":"2"}'>
+                    <div class="cont" student-name="Robert">
+                        <svg class="svg" width="130" height="130" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                          <path class="background" d="M 27 100 A 50 50 0 1 1 97 100"/>
+                          <path class="right-green" d="M 25 100"/>
+                          <path class="wrong-red" d="M 25 100"/>
+                        </svg>
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+            
         </div>
       </div>
     </div>
@@ -611,456 +694,6 @@
     
     
     
-    
-    
-    
-<script>
-$( document ).ready(function() {
-    var cookie = getCookie('monitor-view');
-    if (cookie=='grid') {
-	$("#center-list-grid").fadeIn(600);
-    }else if (cookie=='list') {
-	$("#center-list-list").fadeIn(600);
-    }
-    
-    
-    $("#center-list-grid .studentBox").each(function(){
-	var total_number_of_questions = 10; //put the django template here
-	var id = $(this).attr('id');
-	var wrong = parseInt($(this).data("options").wrong/total_number_of_questions*100);
-	var right = parseInt($(this).data("options").right/total_number_of_questions*100)+wrong;
-	//console.log(scores);
-	if (wrong>=40) {
-	    $(this).css({
-		"background-color":"#ffb3b3",
-		"border-color":"#ff0000",
-	    });
-	}
-	drawCircle(id, 'right-green', parseInt(right));
-	drawCircle(id, 'wrong-red', parseInt(wrong));
-    });
-    
-    function drawCircle(studentID, bar, percentage) {
-        var i = 0;
-        var circle = $("#"+studentID+" ."+bar);
-        var angle = 130;
-        var radius = 50;
-        var timer = window.setInterval(function() {
-            angle +=5;
-            angle %= 360;
-            var radians= (angle/180) * Math.PI;
-            var x = 62 + Math.cos(radians) * radius;
-            var y = 64 + Math.sin(radians) * radius;
-            var e = circle.attr("d");
-            if(i==0) {
-                var d = e+ " M "+x + " " + y;
-            }
-            else {
-                var d = e+ " L "+x + " " + y;
-            }  
-            circle.attr("d", d);
-	    if (i>(53*percentage/100)) {
-		clearInterval(timer);
-	    }
-	    //console.log("i: "+i);
-	    //console.log("angle: "+angle);
-            i++;
-        } 
-	,10);
-    }
-    
-    
-    /*********************************Display User Avatar********************************/
-    $( "#small-avatar" ).tooltip({ content: '<img class="img-rounded shadow" src="{% if userInfo.avatar %}{{ userInfo.avatar }}{% else %}{{ MEDIA_URL }}/static/images/menu.png{% endif %}" width="250" height="250" alt="user"/>' });
-    
-    var current_number_questions = $("#list-header .question-list-item").length;
-    var space_for_questions;
-    
-    
-    resizeElements();
-    
-    $( window ).resize(function() {
-	    resizeElements();
-    });
-	
-    function resizeElements() {
-	var windowWidth = $(window).width(); //retrieve current window width
-	var windowHeight = $(window).height();
-	$("#content-wrapper").css({
-	    'height':(windowHeight-170)+"px",
-	});
-	$("#student-grade-display, #scroll-hide, #scroll-hide-grid, #student-grade-display-grid").css({
-	    'height':(windowHeight-270)+"px",
-	});
-	$("#scroll-hide-grid, #student-grade-display-grid").css({
-	    'height':(windowHeight-220)+"px",
-	});
-	
-	if ($("#center-wrapper").width()<750) {
-	    if ($(".bigitem img").attr('src')=='{{ MEDIA_URL }}/static/images/Simplesheets-dot-logo.png') {
-		$(".bigitem img").fadeOut(300, function(){
-		    $(".bigitem img").attr('src','{{ MEDIA_URL }}/static/images/Simplesheets-dot-shortlogo.png');
-		    $(".bigitem img").fadeIn(300);
-		});
-	    }
-	    
-	}else{
-	    if ($(".bigitem img").attr('src')=='{{ MEDIA_URL }}/static/images/Simplesheets-dot-shortlogo.png') {
-		$(".bigitem img").fadeOut(300, function(){
-		    $(".bigitem img").attr('src','{{ MEDIA_URL }}/static/images/Simplesheets-dot-logo.png');
-		    $(".bigitem img").fadeIn(300);
-		});
-	    }
-	}
-	
-	var content_wrapperWidth = $("#content-wrapper").width();
-	//console.log(content_wrapperWidth);
-	var pixelsPerQuestion = 43;
-	space_for_questions = parseInt(content_wrapperWidth/pixelsPerQuestion);
-	var totalQuestions = $("#list-header .question-list-item").length;
-	if (space_for_questions>totalQuestions) {
-	    space_for_questions=totalQuestions;
-	}
-	//console.log("Total Number of Questions: "+totalQuestions);
-	//console.log("Space for Questions: "+space_for_questions);
-	
-	//loop through numbers to find the fist question visible and last question visible
-	var elementList,
-	    firstCounter=true,
-	    secondCounter=false,
-	    firstQuestionNumber,
-	    lastQuestionNumber;
-	$("#list-header .question-list-item").each(function(){
-	    elementList = $("#list-header .question-list-item");
-	    //console.log($("#list-header .question-list-item").index(this));
-	    if ($(this).is(':visible') && firstCounter==true) {
-		firstQuestionNumber = (elementList.index(this)+1);
-		firstCounter = false;
-		secondCounter= true;
-	    }else if (!$(this).is(':visible') && secondCounter==true) {
-		lastQuestionNumber = elementList.index(this);
-		secondCounter = false;
-	    }
-	    if (!lastQuestionNumber) {
-		lastQuestionNumber=totalQuestions;
-	    }
-	});
-	
-	if ($("#list-header .question-list-item")[($("#list-header .question-list-item").length-1)].style.display == 'block') {
-	    //console.log("last question is visible");
-	    if ($("#next-page").is(':visible')){
-		//console.log("next was visible");
-		$("#next-page").fadeOut(600);
-	    }
-	}else{
-	    //console.log("last question is NOT visible");
-	    if (!$("#next-page").is(':visible')){
-		//console.log("next was NOT visible");
-		$("#next-page").fadeIn(600);
-	    }
-	}
-	if ($("#list-header .question-list-item")[0].style.display == 'block') {
-	    //console.log("first question is visible");
-	    if ($("#previous-page").is(':visible')){
-		//console.log("previous was visible");
-		$("#previous-page").fadeOut(600);
-	    }
-	}else{
-	    //console.log("first question is NOT visible");
-	    if (!$("#previous-page").is(':visible')){
-		//console.log("previous was NOT visible");
-		$("#previous-page").fadeIn(600);
-	    }
-	}
-	
-	
-	if (current_number_questions>space_for_questions){
-	    // This is when there are more questions than space for questions
-	    var element
-	    for (var i=space_for_questions; i<totalQuestions; i++){
-		element = $("#list-header .question-list-item")[i];
-		element.style.display = 'none';
-		$(".student-display").each(function(){
-		    var id = $(this).attr('id');
-		    element = $("#"+id+" .question-list-item")[i];
-		    element.style.display = 'none';
-		});
-	    }
-	    current_number_questions = space_for_questions;
-	    $("#next-page").fadeIn(600);
-	    
-	}else if (current_number_questions<space_for_questions && totalQuestions>current_number_questions) {
-	    var element
-	    if ($("#list-header .question-list-item")[($("#list-header .question-list-item").length-1)].style.display == 'block') {
-		for (var i=(totalQuestions-current_number_questions); i>(totalQuestions-space_for_questions-1); i--){
-		    // This runs if the room is increasing and we can show more quesitons
-		    element = $("#list-header .question-list-item")[i];
-		    element.style.display = 'block';
-		    $(".student-display").each(function(){
-			var id = $(this).attr('id');
-			element = $("#"+id+" .question-list-item")[i];
-			element.style.display = 'block';
-		    });
-		}
-	    }else{
-		if (current_number_questions != lastQuestionNumber-firstQuestionNumber+1) {
-		    current_number_questions = lastQuestionNumber-firstQuestionNumber+1;
-		    for (var i=0; i<(space_for_questions-current_number_questions); i++){
-			// This runs if the room is increasing and we can show more quesitons
-			element = $("#list-header .question-list-item")[lastQuestionNumber+i];
-			element.style.display = 'block';
-			$(".student-display").each(function(){
-			    var id = $(this).attr('id');
-			    element = $("#"+id+" .question-list-item")[lastQuestionNumber+i];
-			    element.style.display = 'block';
-			});
-		    }
-		}else{
-		    for (var i=current_number_questions; i<space_for_questions; i++){
-			// This runs if the room is increasing and we can show more quesitons
-			element = $("#list-header .question-list-item")[i];
-			element.style.display = 'block';
-			$(".student-display").each(function(){
-			    var id = $(this).attr('id');
-			    element = $("#"+id+" .question-list-item")[i];
-			    element.style.display = 'block';
-			});
-		    }
-		}
-	    }
-	    current_number_questions = space_for_questions;
-	}
-	
-	//console.log("Current Number of Questions: "+current_number_questions);
-	
-	
-    }
-    
-    $("#previous-page").click(function(){
-	$("#next-page").fadeIn(600);
-	//loop through numbers to find the fist question visible and last question visible
-	var totalQuestions = $("#list-header .question-list-item").length;
-	var elementList,
-	    firstCounter=true,
-	    secondCounter=false,
-	    firstQuestionNumber,
-	    lastQuestionNumber;
-	$("#list-header .question-list-item").each(function(){
-	    elementList = $("#list-header .question-list-item");
-	    //console.log($("#list-header .question-list-item").index(this));
-	    if ($(this).is(':visible') && firstCounter==true) {
-		firstQuestionNumber = (elementList.index(this)+1);
-		firstCounter = false;
-		secondCounter= true;
-	    }else if (!$(this).is(':visible') && secondCounter==true) {
-		lastQuestionNumber = elementList.index(this);
-		secondCounter = false;
-	    }
-	    if (!lastQuestionNumber) {
-		lastQuestionNumber=totalQuestions;
-	    }
-	});
-	
-	var questionsLeft = totalQuestions-lastQuestionNumber;
-	
-	var element;
-	if (current_number_questions<totalQuestions) {
-	    if (firstQuestionNumber>space_for_questions) {
-		//if there are more than double the quesitons at the beginning to show then keep the next-page button visible
-		//make all current questions invisble and then make the next space for questions visible.
-		
-		// first need to check how many questions are left REMEMBER THIS MIGHT BE THE SECOND TIME IT IS CLICKED
-		
-		
-		for (var i=(lastQuestionNumber-1); i>(firstQuestionNumber-2); i--){
-		    console.log('i in first loop: '+i);
-		    element = $("#list-header .question-list-item")[i];
-		    element.style.display = 'none';
-		    $(".student-display").each(function(){
-			var id = $(this).attr('id');
-			element = $("#"+id+" .question-list-item")[i];
-			element.style.display = 'none';
-		    });
-		}
-		for (var i=(firstQuestionNumber-2); i>(firstQuestionNumber-space_for_questions-2); i--){
-		    console.log('i in second loop: '+i);
-		    element = $("#list-header .question-list-item")[i];
-		    element.style.display = 'block';
-		    $(".student-display").each(function(){
-			var id = $(this).attr('id');
-			element = $("#"+id+" .question-list-item")[i];
-			element.style.display = 'block';
-		    });
-		}
-		
-	    }else{
-		//Then there is plenty of room to show the rest of the questions on the screen.  Make the previous-page button invisible
-		//subtract the total number of questions and subtract it from the last question that is visible.
-		$("#previous-page").fadeOut(600);
-		var questionDifference = (firstQuestionNumber-1);
-		//console.log("Question Difference: "+questionDifference);
-		//take that number difference and make the first visible question plus that difference invisible and then make the remaining questions visible.
-		for (var i=0; i<lastQuestionNumber; i++){
-		    if (i<firstQuestionNumber) {
-			element = $("#list-header .question-list-item")[i];
-			element.style.display = 'block';
-			$(".student-display").each(function(){
-			    var id = $(this).attr('id');
-			    element = $("#"+id+" .question-list-item")[i];
-			    element.style.display = 'block';
-			});
-		    }else if (i>space_for_questions-1) {
-			element = $("#list-header .question-list-item")[i];
-			element.style.display = 'none';
-			$(".student-display").each(function(){
-			    var id = $(this).attr('id');
-			    element = $("#"+id+" .question-list-item")[i];
-			    element.style.display = 'none';
-			});
-		    }
-		}
-	    }
-	}
-	
-    });
-    
-    $("#next-page").click(function(){
-	$("#previous-page").fadeIn(600);
-	//loop through numbers to find the fist question visible and last question visible
-	var totalQuestions = $("#list-header .question-list-item").length;
-	var elementList,
-	    firstCounter=true,
-	    secondCounter=false,
-	    firstQuestionNumber,
-	    lastQuestionNumber;
-	$("#list-header .question-list-item").each(function(){
-	    elementList = $("#list-header .question-list-item");
-	    //console.log($("#list-header .question-list-item").index(this));
-	    if ($(this).is(':visible') && firstCounter==true) {
-		firstQuestionNumber = (elementList.index(this)+1);
-		firstCounter = false;
-		secondCounter= true;
-	    }else if (!$(this).is(':visible') && secondCounter==true) {
-		lastQuestionNumber = elementList.index(this);
-		secondCounter = false;
-	    }
-	    if (!lastQuestionNumber) {
-		lastQuestionNumber=totalQuestions;
-	    }
-	});
-	
-	var questionsLeft = totalQuestions-lastQuestionNumber;
-	
-	var element;
-	if (current_number_questions<totalQuestions) {
-	    if (questionsLeft>space_for_questions) {
-		//if there are more than double the quesitons left to show then keep the next-page button visible
-		//make all current questions invisble and then make the next space for questions visible.
-		
-		// first need to check how many questions are left REMEMBER THIS MIGHT BE THE SECOND TIME IT IS CLICKED
-		
-		
-		for (var i=(firstQuestionNumber-1); i<lastQuestionNumber; i++){
-		    element = $("#list-header .question-list-item")[i];
-		    element.style.display = 'none';
-		    $(".student-display").each(function(){
-			var id = $(this).attr('id');
-			element = $("#"+id+" .question-list-item")[i];
-			element.style.display = 'none';
-		    });
-		}
-		for (var i=lastQuestionNumber; i<(space_for_questions+lastQuestionNumber); i++){
-		    element = $("#list-header .question-list-item")[i];
-		    element.style.display = 'block';
-		    $(".student-display").each(function(){
-			var id = $(this).attr('id');
-			element = $("#"+id+" .question-list-item")[i];
-			element.style.display = 'block';
-		    });
-		}
-		
-	    }else{
-		//Then there is plenty of room to show the rest of the questions on the screen.  Make the next-page button invisible
-		//subtract the total number of questions and subtract it from the last question that is visible.
-		$("#next-page").fadeOut(600);
-		var questionDifference = (totalQuestions-lastQuestionNumber);
-		//console.log("Question Difference: "+questionDifference);
-		//take that number difference and make the first visible question plus that difference invisible and then make the remaining questions visible.
-		for (var i=(firstQuestionNumber-1); i<totalQuestions; i++){
-		    if (i<(firstQuestionNumber+questionDifference-1)) {
-			element = $("#list-header .question-list-item")[i];
-			element.style.display = 'none';
-			$(".student-display").each(function(){
-			    var id = $(this).attr('id');
-			    element = $("#"+id+" .question-list-item")[i];
-			    element.style.display = 'none';
-			});
-		    }else if (i>=lastQuestionNumber) {
-			element = $("#list-header .question-list-item")[i];
-			element.style.display = 'block';
-			$(".student-display").each(function(){
-			    var id = $(this).attr('id');
-			    element = $("#"+id+" .question-list-item")[i];
-			    element.style.display = 'block';
-			});
-		    }
-		}
-	    }
-	}
-	
-    });
-    
-    
-    $("#grid-button").click(function(){
-	$("#center-list-list").fadeOut(600, function(){
-	    $("#center-list-grid").fadeIn(600);
-	});
-	resizeElements();
-	setCookie('monitor-view','grid',30);
-    });
-    $("#list-button").click(function(){
-	$("#center-list-grid").fadeOut(600, function(){
-	    $("#center-list-list").fadeIn(600);
-	});
-	resizeElements();
-	setCookie('monitor-view','list',30);
-    });
-    
-    
-    
-    
-});
-
-
-/******************************************** Function **************************************************/
-
-    function setCookie(cname,cvalue,exdays){
-	var d = new Date();
-	d.setTime(d.getTime()+(exdays*24*60*60*1000));
-	var expires = "expires="+d.toGMTString();
-	document.cookie = cname + "=" + cvalue + "; " + expires;
-    }
-	
-	
-    function getCookie(cname){
-	var name = cname + "=";
-	var ca = document.cookie.split(';');
-	for(var i=0; i<ca.length; i++){
-	    var c = ca[i].trim();
-	    if (c.indexOf(name)==0) return c.substring(name.length,c.length);
-	  }
-	return "";
-    }
-    
-
-
-
-
-
-
-
-</script>
-
     
     
     

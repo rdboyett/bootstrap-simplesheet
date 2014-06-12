@@ -120,7 +120,7 @@
         <a href="#"><li class="list-group-item clickable">
           <div class="list-class-item">
             <div class="pull-right">
-              <button class="btn btn-xs btn-success hidden">
+              <button class="btn btn-xs btn-success rounded hidden">
                 <span class="glyphicon glyphicon-cog"></span>
               </button>
             </div>
@@ -130,7 +130,7 @@
         <li class="list-group-item active">
           <div class="list-class-item">
             <div class="pull-right">
-              <button class="btn btn-xs btn-success">
+              <button class="btn btn-xs btn-success rounded">
                 <span class="glyphicon glyphicon-cog"></span>
               </button>
             </div>
@@ -138,8 +138,7 @@
           </div>
         </li>
       </ul>
-      
-              <button id="add-class" class="btn btn-block btn-info" data-container="body" data-toggle="popover" data-placement="bottom" data-content="You don't have a class yet." data-original-title="Click here!">
+              <button id="add-class" class="btn btn-block btn-info rounded" data-toggle="modal" data-target="#new-class">
                 <span class="glyphicon glyphicon-hand-right"><span> add a class</span>
               </button>
     </div>
@@ -149,13 +148,13 @@
       <div>
         <div class="row">
           <div class="col-xs-12 col-sm-6">
-              <button id="class-code-container" class="btn btn-block btn-lg btn-warning" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Give your students this code." data-original-title="Click here!">
+              <button id="class-code-container" class="btn btn-block btn-lg btn-warning rounded" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Give your students this code." data-original-title="Click here!">
                 Class code: <span class="class-code">erM44E</button>
               </button>
           </div>
           <br class="visible-xs">
           <div class="col-xs-12 col-sm-6">
-              <button id="new-worksheet" class="btn btn-block btn-lg btn-success" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Create your first worksheet." data-original-title="Click here!">
+              <button id="new-worksheet" class="btn btn-block btn-lg btn-success rounded" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Create your first worksheet." data-original-title="Click here!">
                 create a new worksheet
               </button>
           </div>
@@ -166,10 +165,10 @@
           
           <!------------------------------ Worksheet Display ------------------------------------->
           <li class="col-xs-6 col-md-4">
-            <div class="panel panel-default card-edpuzzle list-video-item">
+            <div class="panel panel-default card-edpuzzle list-video-item rounded">
 	      <div class="panel-body">
 		<div class="img-assignment show-assignment-stats clickable">
-		  <img src="https://i.ytimg.com/vi/F000UK_kUq4/hqdefault.jpg" alt="The Green Anaconda Song" height="100%" width="100%" class="img-responsive">
+		  <img src="images/thumbnail.png" alt="simple machines" height="" width="100%" class="img-responsive">
 		    <div class="img-center">
 		      <ul class="list-unstyled monitor-button" data-toggle="popover" data-placement="bottom" data-content="See your students progress!" data-original-title="" title="">
 			<li><i class="glyphicon glyphicon-stats" style="font-size: 30px;"></i></li>
@@ -178,51 +177,17 @@
 		    </div>
 		  </div>
 		  <div class="card-title">
-		    <h5 class="text-center">The Green Anaconda Song</h5>
+		    <h5 class="text-center">Simple Machines</h5>
 		  </div>
 		</div>
 		<div class="panel-footer">
-		<button class="btn btn-warning view-as-student" data-toggle="popover" data-placement="bottom" data-content="Do the homework as student. Then check the assignment analytics!" data-original-title="" title="">
+		<button class="btn btn-default view-as-student" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="student view">
 		  <i class="glyphicon glyphicon-eye-open"></i>
 		</button>
-		<button class="btn btn-info btn-labeled btn-xs-icon-only edit-assignment" data-original-title="" title="">
-                  <span class="btn-label"><i class="glyphicon glyphicon-edit"></i></span>
-		  <span>Edit</span>
-		</button>
-		<button class="btn btn-danger pull-right remove-assignment"><i class="glyphicon glyphicon-trash"></i></button>
-	      </div>
-            </div>
-          </li>
-          <!------------------------------ End of Worksheet Display ------------------------------------->
-          
-          
-          
-          <!------------------------------ Worksheet Display ------------------------------------->
-          <li class="col-xs-6 col-md-4">
-            <div class="panel panel-default card-edpuzzle list-video-item">
-	      <div class="panel-body">
-		<div class="img-assignment show-assignment-stats clickable">
-		  <img src="https://i.ytimg.com/vi/F000UK_kUq4/hqdefault.jpg" alt="The Green Anaconda Song" height="100%" width="100%" class="img-responsive">
-		    <div class="img-center">
-		      <ul class="list-unstyled monitor-button" data-toggle="popover" data-placement="bottom" data-content="See your students progress!" data-original-title="" title="">
-			<li><i class="glyphicon glyphicon-stats" style="font-size: 30px;"></i></li>
-                        <li><strong>Monitor</strong></li>
-		      </ul>
-		    </div>
-		  </div>
-		  <div class="card-title">
-		    <h5 class="text-center">The Green Anaconda Song</h5>
-		  </div>
-		</div>
-		<div class="panel-footer">
-		<button class="btn btn-warning view-as-student" data-toggle="popover" data-placement="bottom" data-content="Do the homework as student. Then check the assignment analytics!" data-original-title="" title="">
-		  <i class="glyphicon glyphicon-eye-open"></i>
-		</button>
-		<button class="btn btn-info btn-labeled btn-xs-icon-only edit-assignment" data-original-title="" title="">
-                  <span class="btn-label"><i class="glyphicon glyphicon-edit"></i></span>
-		  <span>Edit</span>
-		</button>
-		<button class="btn btn-danger pull-right remove-assignment"><i class="glyphicon glyphicon-trash"></i></button>
+              <button class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="edit">
+                <i class="glyphicon glyphicon-edit"></i>
+              </button>
+		<button class="btn btn-default pull-right remove-assignment"><i class="glyphicon glyphicon-trash"></i></button>
 	      </div>
             </div>
           </li>
@@ -231,10 +196,10 @@
           
           <!------------------------------ Worksheet Display ------------------------------------->
           <li class="col-xs-6 col-md-4">
-            <div class="panel panel-default card-edpuzzle list-video-item">
+            <div class="panel panel-default card-edpuzzle list-video-item rounded">
 	      <div class="panel-body">
 		<div class="img-assignment show-assignment-stats clickable">
-		  <img src="https://i.ytimg.com/vi/F000UK_kUq4/hqdefault.jpg" alt="The Green Anaconda Song" height="100%" width="100%" class="img-responsive">
+		  <img src="images/thumbnail.png" alt="simple machines" height="" width="100%" class="img-responsive">
 		    <div class="img-center">
 		      <ul class="list-unstyled monitor-button" data-toggle="popover" data-placement="bottom" data-content="See your students progress!" data-original-title="" title="">
 			<li><i class="glyphicon glyphicon-stats" style="font-size: 30px;"></i></li>
@@ -243,18 +208,17 @@
 		    </div>
 		  </div>
 		  <div class="card-title">
-		    <h5 class="text-center">The Green Anaconda Song</h5>
+		    <h5 class="text-center">Simple Machines</h5>
 		  </div>
 		</div>
 		<div class="panel-footer">
-		<button class="btn btn-warning view-as-student" data-toggle="popover" data-placement="bottom" data-content="Do the homework as student. Then check the assignment analytics!" data-original-title="" title="">
+		<button class="btn btn-default view-as-student" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="student view">
 		  <i class="glyphicon glyphicon-eye-open"></i>
 		</button>
-		<button class="btn btn-info btn-labeled btn-xs-icon-only edit-assignment" data-original-title="" title="">
-                  <span class="btn-label"><i class="glyphicon glyphicon-edit"></i></span>
-		  <span>Edit</span>
-		</button>
-		<button class="btn btn-danger pull-right remove-assignment"><i class="glyphicon glyphicon-trash"></i></button>
+              <button class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="edit">
+                <i class="glyphicon glyphicon-edit"></i>
+              </button>
+		<button class="btn btn-default pull-right remove-assignment"><i class="glyphicon glyphicon-trash"></i></button>
 	      </div>
             </div>
           </li>
@@ -263,10 +227,10 @@
           
           <!------------------------------ Worksheet Display ------------------------------------->
           <li class="col-xs-6 col-md-4">
-            <div class="panel panel-default card-edpuzzle list-video-item">
+            <div class="panel panel-default card-edpuzzle list-video-item rounded">
 	      <div class="panel-body">
 		<div class="img-assignment show-assignment-stats clickable">
-		  <img src="https://i.ytimg.com/vi/F000UK_kUq4/hqdefault.jpg" alt="The Green Anaconda Song" height="100%" width="100%" class="img-responsive">
+		  <img src="images/thumbnail.png" alt="simple machines" height="" width="100%" class="img-responsive">
 		    <div class="img-center">
 		      <ul class="list-unstyled monitor-button" data-toggle="popover" data-placement="bottom" data-content="See your students progress!" data-original-title="" title="">
 			<li><i class="glyphicon glyphicon-stats" style="font-size: 30px;"></i></li>
@@ -275,18 +239,17 @@
 		    </div>
 		  </div>
 		  <div class="card-title">
-		    <h5 class="text-center">The Green Anaconda Song</h5>
+		    <h5 class="text-center">Simple Machines</h5>
 		  </div>
 		</div>
 		<div class="panel-footer">
-		<button class="btn btn-warning view-as-student" data-toggle="popover" data-placement="bottom" data-content="Do the homework as student. Then check the assignment analytics!" data-original-title="" title="">
+		<button class="btn btn-default view-as-student" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="student view">
 		  <i class="glyphicon glyphicon-eye-open"></i>
 		</button>
-		<button class="btn btn-info btn-labeled btn-xs-icon-only edit-assignment" data-original-title="" title="">
-                  <span class="btn-label"><i class="glyphicon glyphicon-edit"></i></span>
-		  <span>Edit</span>
-		</button>
-		<button class="btn btn-danger pull-right remove-assignment"><i class="glyphicon glyphicon-trash"></i></button>
+              <button class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="edit">
+                <i class="glyphicon glyphicon-edit"></i>
+              </button>
+		<button class="btn btn-default pull-right remove-assignment"><i class="glyphicon glyphicon-trash"></i></button>
 	      </div>
             </div>
           </li>
@@ -295,10 +258,10 @@
           
           <!------------------------------ Worksheet Display ------------------------------------->
           <li class="col-xs-6 col-md-4">
-            <div class="panel panel-default card-edpuzzle list-video-item">
+            <div class="panel panel-default card-edpuzzle list-video-item rounded">
 	      <div class="panel-body">
 		<div class="img-assignment show-assignment-stats clickable">
-		  <img src="https://i.ytimg.com/vi/F000UK_kUq4/hqdefault.jpg" alt="The Green Anaconda Song" height="100%" width="100%" class="img-responsive">
+		  <img src="images/thumbnail.png" alt="simple machines" height="" width="100%" class="img-responsive">
 		    <div class="img-center">
 		      <ul class="list-unstyled monitor-button" data-toggle="popover" data-placement="bottom" data-content="See your students progress!" data-original-title="" title="">
 			<li><i class="glyphicon glyphicon-stats" style="font-size: 30px;"></i></li>
@@ -307,18 +270,17 @@
 		    </div>
 		  </div>
 		  <div class="card-title">
-		    <h5 class="text-center">The Green Anaconda Song</h5>
+		    <h5 class="text-center">Simple Machines</h5>
 		  </div>
 		</div>
 		<div class="panel-footer">
-		<button class="btn btn-warning view-as-student" data-toggle="popover" data-placement="bottom" data-content="Do the homework as student. Then check the assignment analytics!" data-original-title="" title="">
+		<button class="btn btn-default view-as-student" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="student view">
 		  <i class="glyphicon glyphicon-eye-open"></i>
 		</button>
-		<button class="btn btn-info btn-labeled btn-xs-icon-only edit-assignment" data-original-title="" title="">
-                  <span class="btn-label"><i class="glyphicon glyphicon-edit"></i></span>
-		  <span>Edit</span>
-		</button>
-		<button class="btn btn-danger pull-right remove-assignment"><i class="glyphicon glyphicon-trash"></i></button>
+              <button class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="edit">
+                <i class="glyphicon glyphicon-edit"></i>
+              </button>
+		<button class="btn btn-default pull-right remove-assignment"><i class="glyphicon glyphicon-trash"></i></button>
 	      </div>
             </div>
           </li>
@@ -327,10 +289,10 @@
           
           <!------------------------------ Worksheet Display ------------------------------------->
           <li class="col-xs-6 col-md-4">
-            <div class="panel panel-default card-edpuzzle list-video-item">
+            <div class="panel panel-default card-edpuzzle list-video-item rounded">
 	      <div class="panel-body">
 		<div class="img-assignment show-assignment-stats clickable">
-		  <img src="https://i.ytimg.com/vi/F000UK_kUq4/hqdefault.jpg" alt="The Green Anaconda Song" height="100%" width="100%" class="img-responsive">
+		  <img src="images/thumbnail.png" alt="simple machines" height="" width="100%" class="img-responsive">
 		    <div class="img-center">
 		      <ul class="list-unstyled monitor-button" data-toggle="popover" data-placement="bottom" data-content="See your students progress!" data-original-title="" title="">
 			<li><i class="glyphicon glyphicon-stats" style="font-size: 30px;"></i></li>
@@ -339,22 +301,54 @@
 		    </div>
 		  </div>
 		  <div class="card-title">
-		    <h5 class="text-center">The Green Anaconda Song</h5>
+		    <h5 class="text-center">Simple Machines</h5>
 		  </div>
 		</div>
 		<div class="panel-footer">
-		<button class="btn btn-warning view-as-student" data-toggle="popover" data-placement="bottom" data-content="Do the homework as student. Then check the assignment analytics!" data-original-title="" title="">
+		<button class="btn btn-default view-as-student" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="student view">
 		  <i class="glyphicon glyphicon-eye-open"></i>
 		</button>
-		<button class="btn btn-info btn-labeled btn-xs-icon-only edit-assignment" data-original-title="" title="">
-                  <span class="btn-label"><i class="glyphicon glyphicon-edit"></i></span>
-		  <span>Edit</span>
-		</button>
-		<button class="btn btn-danger pull-right remove-assignment"><i class="glyphicon glyphicon-trash"></i></button>
+              <button class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="edit">
+                <i class="glyphicon glyphicon-edit"></i>
+              </button>
+		<button class="btn btn-default pull-right remove-assignment"><i class="glyphicon glyphicon-trash"></i></button>
 	      </div>
             </div>
           </li>
           <!------------------------------ End of Worksheet Display ------------------------------------->
+          
+          
+          <!------------------------------ Worksheet Display ------------------------------------->
+          <li class="col-xs-6 col-md-4">
+            <div class="panel panel-default card-edpuzzle list-video-item rounded">
+	      <div class="panel-body">
+		<div class="img-assignment show-assignment-stats clickable">
+		  <img src="images/thumbnail.png" alt="simple machines" height="" width="100%" class="img-responsive">
+		    <div class="img-center">
+		      <ul class="list-unstyled monitor-button" data-toggle="popover" data-placement="bottom" data-content="See your students progress!" data-original-title="" title="">
+			<li><i class="glyphicon glyphicon-stats" style="font-size: 30px;"></i></li>
+                        <li><strong>Monitor</strong></li>
+		      </ul>
+		    </div>
+		  </div>
+		  <div class="card-title">
+		    <h5 class="text-center">Simple Machines</h5>
+		  </div>
+		</div>
+		<div class="panel-footer">
+		<button class="btn btn-default view-as-student" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="student view">
+		  <i class="glyphicon glyphicon-eye-open"></i>
+		</button>
+              <button class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="edit">
+                <i class="glyphicon glyphicon-edit"></i>
+              </button>
+		<button class="btn btn-default pull-right remove-assignment"><i class="glyphicon glyphicon-trash"></i></button>
+	      </div>
+            </div>
+          </li>
+          <!------------------------------ End of Worksheet Display ------------------------------------->
+          
+          
           
           
           
@@ -364,7 +358,28 @@
   </div>
 </div>
 
-
+<!---------------- modal's ------------------------------------->
+<div id="new-class" class="modal fade" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content rounded">
+      <div class="modal-header top-rounded">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Create a Class</h4>
+      </div>
+      <div class="modal-body">
+        
+        <form id="className-form" action="" >
+          <input name="className" type="text" class="form-control rounded" placeholder="class name...">
+        </form>
+        
+      </div>
+      <div class="modal-footer bottom-rounded">
+        <button type="button" class="btn btn-default rounded" data-dismiss="modal">Close</button>
+        <button type="submit" form="className-form" class="btn btn-primary rounded">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
     <!-- Bootstrap core JavaScript
@@ -374,5 +389,6 @@
     <script src="js/bootstrap.min.js"></script>
     <!--<script src="js/bootswatch.js"></script>-->
     <script src="js/my-script.js"></script>
+    <script src="js/classes.js"></script>
   </body>
 </html>

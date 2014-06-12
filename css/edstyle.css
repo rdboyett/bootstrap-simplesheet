@@ -3524,6 +3524,8 @@ button.close {
     border: 0;
     -webkit-appearance: none;
 }
+
+/*
 .modal-open {
     overflow: hidden;
 }
@@ -3640,6 +3642,10 @@ button.close {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
 }
+*/
+
+
+
 }.tooltip {
     position: absolute;
     z-index: 1030;
@@ -6540,9 +6546,13 @@ div#lock-message {
 .img-assignment.clickable:hover ul {
     background-color: transparent;
 }
+@media screen and (min-width:0px) {
+    .img-assignment {
+    height: 100px!important;
+}
 @media screen and (min-width:767px) {
     .img-assignment {
-    height: 257px!important;
+    height: 150px!important;
 }
 }@media screen and (min-width:992px) {
     .img-assignment {
@@ -7285,6 +7295,8 @@ table.upload-dropzone tr.upload-info span.progress-percentage {
     min-width: 300px;
     padding: 2px 10px 10px;
 }
+
+/*
 @media screen and (min-width:787px) {
     .modal-steps {
     width: 90%}
@@ -7306,6 +7318,8 @@ table.upload-dropzone tr.upload-info span.progress-percentage {
 .modal-danger .modal-header button {
     color: #fff;
 }
+*/
+
 .legal-container {
     margin: 20px 0 30px;
 }
