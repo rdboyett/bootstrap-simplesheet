@@ -12,6 +12,7 @@
     <title>My Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
+    <link href="css/edstyle.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Bootstrap theme -->
     <!--<link href="css/bootstrap-theme.min.css" rel="stylesheet">
@@ -54,7 +55,7 @@
   </div>
   <div class="navbar-collapse collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">dashboard</a></li>
+      <li><a href="dashboard.html">dashboard</a></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">worksheets</span></a>
         <ul class="dropdown-menu">
@@ -63,7 +64,7 @@
           <li><a href="monitor.html"><span class="glyphicon glyphicon-stats"></span>  monitor</a></li>
         </ul>
       </li>
-      <li><a href="classes.html">classes</a></li>
+      <li class=""><a href="classes.html">classes</a></li>
       
       <li class="dropdown visible-sm">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-search"></span></a>
@@ -97,7 +98,7 @@
         <a href="#" class="dropdown-toggle hidden-sm hidden-md" data-toggle="dropdown">Robert  <span class="glyphicon glyphicon-user"></span><b class="caret"></b></a>
         <a href="#" class="dropdown-toggle visible-sm visible-md" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span><b class="caret"></b></a>
         <ul class="dropdown-menu">
-          <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span>  edit profile</a></li>
+          <li><a><span class="glyphicon glyphicon-user"></span>  edit profile</a></li>
           <li><a href="#"><span class="glyphicon glyphicon-cog"></span>  settings</a></li>
           <li class="divider"></li>
           <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>  sign out</a></li>
@@ -111,79 +112,113 @@
 <!-------------------------End Navbar --------------------------------------------------->
 
 
-
 <div class="container">
-  <div class="row">
-    <h3>Welcome to SimpleSheets</h3>
-    <p>Follow these steps and you will quickly be able to transform any document or pdf into an automatically graded online worksheet for your classroom.</p>
+  <div id="main-region" class="">
+    <div>
+      <div class="row">
+	<div class="col-xs-12 col-sm-6 col-md-7">
+            <h3>Profile</h3>
+	    <div class="profile-card">
+	      <p>
+		<strong>School</strong>
+		<button id="show-school" class="btn btn-primary pull-right rounded"><i class="glyphicon glyphicon-pencil"></i></button>
+	      </p>
+	      <span>Alvarado High School</span>
+	    </div>
+            
+            
+            
+	    <form novalidate="" data-validate="parsley" id="profile-form" class="profile-card">
+	      <div id="alert-panel"></div>
+	      <img src="https://lh3.googleusercontent.com/-K9EDOFcINeI/AAAAAAAAAAI/AAAAAAAAABU/wA5Phtqseck/photo.jpg" alt="User photo" class="rounded img-responsive pull-left">
+	      <div class="form-group">
+		<label class="control-label" for="firstName" style="font-size: 18px;">First Name</label>
+		<div class="input-group rounded">
+                  <span class="input-group-addon rounded"><i class="glyphicon glyphicon-user"></i></span>
+                  <input type="text" class="form-control parsley-validated rounded" id="firstName" name="firstName" data-trigger="change" required="required" data-notblank="true" value="Robert">
+		</div>
+		<span class="help-block"></span>
+	      </div>
+	      <div class="form-group">
+		<label class="control-label" for="lastName" style="font-size: 18px;">Last Name</label>
+		<div class="input-group rounded">
+                  <span class="input-group-addon rounded"><i class="glyphicon glyphicon-user"></i></span>
+                  <input type="text" class="form-control parsley-validated rounded" id="lastName" name="lastName" data-trigger="change" required="required" data-notblank="true" value="Boyett">
+		</div>
+		<span class="help-block"></span>
+	      </div>
+	      <br>
+	      <div class="row">
+		<div class="col-xs-6">
+		  <button type="submit" class="btn btn-block btn-success disabled rounded" id="update-profile">Update Profile</button>
+		</div>
+		<div class="col-xs-6">
+                  <button type="submit" class="btn btn-block btn-primary rounded" id="show-update-password-modal">
+		    Set Password
+                  </button>
+		</div>
+	      </div>
+	    </form>
+        </div>
+            
+        <div class="col-xs-12 col-sm-6 col-md-5">
+	    <div id="auth-connections" class="profile-card">
+              <div>
+                <h4>Your Accounts:</h4>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="media">
+                      <a class="pull-left" href="#">
+                        <img class="media-object rounded" src="images/Simplesheets-dot-shortlogo.png" alt="google-thumbnail">
+                      </a>
+                      <div class="media-body">
+                        <h5 class="media-heading">Your SimpleSheets Account:</h5>
+                        <strong>Username: </strong>rboyett@alvaradoisd.net
+                      </div>
+                    </div>
+                    <div class="media">
+                      <a class="pull-left" href="#">
+                        <img class="media-object rounded" src="images/google-logo.png" alt="google-thumbnail">
+                      </a>
+                      <div class="media-body">
+                        <h5 class="media-heading">You are connected to the Google account:</h5>
+                        <strong>Email: </strong>rboyett@alvaradoisd.net
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div id="account-connection-mssg">
+                </div>
+              </div>
+              <div class="row">
+              <div class="col-xs-6">
+                <button class="btn btn-block btn-social btn-danger rounded" id="edmodo-authorize" type="button">
+                  <span> <img class="rounded" style="width: 38px;margin: 0px;border: none;" src="images/g-plus.jpg" width="80" alt=""> </span><span> Connect with Google</span>
+                </button>
+              </div>
+              <div class="col-xs-6">
+                <button class="btn btn-block btn-social btn-info rounded" id="edmodo-authorize" type="button">
+                  <span> <img style="width: 25px;margin: 6px 2px 2px 3px;border: none;" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/41205/edmodo-icon_1.png" width="80" alt=""> </span><span> Connect with Edmodo</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-<div class="container">
-  <div class="row alert alert-info rounded">
-      <div class="col-xs-4 col-sm-2 col-md-1">
-        <div class="round-button">1</div>
-      </div>
-      <div class="col-xs-8 col-sm-6 col-lg-5">
-        <p><strong>create a worksheet</strong></p>
-        <p>Pick a document or pdf from your Google Drive, Dropbox or computer.</p>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-3">
-        <button class="btn btn-primary btn-block btn-lg rounded" style="margin: 15px 0 0 0;"><span class="glyphicon glyphicon-file"></span><strong>  Create a Worksheet</strong></button>
-      </div>
-  </div>
-</div>
-<div class="container">
-  <div class="row well success rounded">
-      <div class="col-xs-4 col-sm-2 col-md-1">
-        <div class="round-button"><span class="text-success glyphicon glyphicon-ok"></span></div>
-      </div>
-      <div class="col-xs-8 col-sm-6 col-lg-5">
-        <p><strong>create a classroom</strong></p>
-        <p>Because you need a place to handout worksheets.</p>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-3">
-        <button class="btn btn-success btn-block btn-lg rounded" style="margin: 15px 0 0 0;"><span class="glyphicon glyphicon-book"></span><strong>  Create a Class</strong></button>
-      </div>
-  </div>
-</div>
-<div class="container">
-  <div class="row well rounded">
-      <div class="col-xs-4 col-sm-2 col-md-1">
-        <div class="round-button">3</div>
-      </div>
-      <div class="col-xs-8 col-sm-6 col-lg-5">
-        <p><strong>handout your worksheet</strong></p>
-        <p>Because your students need something to do.</p>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-3">
-        <button class="btn btn-info btn-block btn-lg rounded" style="margin: 15px 0 0 0;"><span class="glyphicon glyphicon-file"></span><strong>  Assign a Worksheet</strong></button>
-      </div>
-  </div>
-</div>
-<div class="container">
-  <div class="row well rounded">
-      <div class="col-xs-4 col-sm-2 col-md-1">
-        <div class="round-button">4</div>
-      </div>
-      <div class="col-xs-8 col-sm-6 col-lg-5">
-        <p><strong>actively monitor your students</strong></p>
-        <p>Because you need to know who needs help, now not later!</p>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-3">
-        <button class="btn btn-info btn-block btn-lg rounded" style="margin: 15px 0 0 0;"><span class="glyphicon glyphicon-stats"></span><strong>  Monitor</strong></button>
-      </div>
-  </div>
-</div>
-
-
-
+        
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootswatch.js"></script>
+    <!--<script src="js/bootswatch.js"></script>-->
     <script src="js/my-script.js"></script>
+    <script src="js/classes.js"></script>
   </body>
 </html>
